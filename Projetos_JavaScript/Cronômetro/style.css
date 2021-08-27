@@ -1,0 +1,32 @@
+*{
+    background: rgb(139, 139, 139);
+}
+#corpo{
+    text-align: center;
+    margin: 100px;
+}
+#button-one, #button-two, #button-three{
+    width: 100px;
+    height: 30px;
+    background: chartreuse;
+    color: black;
+}
+#button-two{
+    background: red;
+}
+#button-three{
+    background: chocolate;
+}
+#contagem{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer{
+    opacity: 0.6;
+    font-size: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    position:absolute;
+    bottom:0;
+    width:95%;
+    text-align: right;
+}

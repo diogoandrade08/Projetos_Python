@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h2 class="titulo" >Nome:</h2>
+        <input class="input" id="nome" type="text" autocomplete="off" value="" placeholder="Nome" name="nome" required="required"> 
+        <p class="menssagem">O campo precisa ser preenchido</p>
+        <h2 class="titulo">Idade:</h2>
+        <input class="input" id="idade" type="text" autocomplete="off" value="" placeholder="Ex: 19" name="idade" required="required">  Anos
+        <p class="menssagem">O campo precisa ser preenchido</p>
+        <h2 class="titulo">Altura:</h2>
+        <input class="input" id="altura" type="text" autocomplete="off" value="" placeholder="Ex: 1.75" name="altura" required="required">  m
+        <p class="menssagem">O campo precisa ser preenchido</p>
+        <h2 class="titulo">Peso:</h2>
+        <input class="input" id="peso" type="text" autocomplete="off" value="" placeholder="Ex: 65.2" name="peso" required="required">  kg
+        <p class="menssagem">O campo precisa ser preenchido</p>
+        <br>
+        <br>
+        <button type="submit" id="enviar" class="botao">Verificar</button>
+    </div>
+    <div class="container-ficha">
+        <h1>Ficha de Resultado</h1>
+        <div class="descriçao">
+            Nome: <span id="nome-span"></span> <br><br>
+            Idade: <span id="span-idade"></span> Anos<br><br>
+            Altura: <span id="span-altura"></span> Cm<br><br>
+            Peso: <span id="span-peso"></span> Kg<br><br>
+            IMC: <span id="span-imc"></span> <br>
+            <div class="container-2">
+                <div class="result" id="maisPeso">
+                    <p>Sinto muito, mas o seu imc é de <span class="span"></span> e você precisa ganhar peso.</p>
+                </div>
+                <div class="result" id="ideal">
+                    <p>Parabéns, o seu imc é de <span class="span"></span> e você está no peso ideial.</p>
+                </div>
+                <div class="result" id="menosPeso">
+                    <p>Sinto muito, mas o seu imc é de <span class="span"></span> e você precisa emagrecer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
